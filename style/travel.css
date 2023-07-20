@@ -1,5 +1,5 @@
 main {
-    background: url(../image/bg_03.png) no-repeat center -600px;
+    background: url(../image/bg_f.png) no-repeat center -370px;
     background-size: cover;
 }
 main .main_bg {}
@@ -39,8 +39,9 @@ main .cal p span {
 /* 선택 */
 main form {
     margin: 0 auto;
-    width: 1008px;
+    width: 1010px;
     border:5px solid #00D1FF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
 }
 main form fieldset {
 }
@@ -58,6 +59,7 @@ main form fieldset ul li input {
     padding-left: 30px;
     width: 240px;/* 검색창 길이 */
     line-height: 64px;
+    background-color:#fff;
 }
 main form fieldset ul li #search_btn {
     border:0; background:none;
@@ -68,7 +70,7 @@ main form fieldset ul li #country {
     padding:0 10px;
     border:0;
     width: 164px; height: 64px;
-    
+    background-color:#fff;   
 }
 main form fieldset ul li #country option {}
 main form fieldset ul li #start_date {
@@ -76,6 +78,7 @@ main form fieldset ul li #start_date {
     padding:0 10px;
     border:0;
     width: 188px; height: 64px;
+    background-color:#fff;
 }
 main form fieldset ul li #start_date option {}
 main form fieldset ul li #end_date {
@@ -83,15 +86,17 @@ main form fieldset ul li #end_date {
     padding:0 10px;
     border:0;
     width: 188px; height: 64px;
+    background-color:#fff;
 }
 main form fieldset ul li #end_date option {}
 main form fieldset ul li button {
     width: 183px; height: 64px;
     background-color: #FE6162;
-    color:#FFF62C;
+    color:#FFf;
     font-size: 1.333rem;
     font-weight: 700;
 }
+main form fieldset ul li button:hover {background-color: #eb2a2a; color: #FFF62C;}
 /* 여행지추천 */
 main .free {
     margin: 150px 0;
@@ -114,108 +119,311 @@ main .free h2 span {
     color: #FE6162;
 }
 main .free .recommendation {}
-main .free .recommendation .phuket {}
-main .free .recommendation .phuket .phuket_top {
+
+/* 묶음태그 */
+.top {
     width: 1200px; height: 400px;
-    margin: 0 auto;
+    margin: 100px auto 0;
     background-color: #fff;
-    padding: 50px;
+    padding: 50px 0 50px 50px;
     border-radius: 40px;
     display: flex;
     flex-flow:row nowrap;
 }
-main .free .recommendation .phuket .phuket_top .top_left {}
-main .free .recommendation .phuket .phuket_top .top_left p {}
-main .free .recommendation .phuket .phuket_top .top_left p img {}
-/* 묶음태그 */
 .top_right {
-    margin-left: 50px;
     text-align: start;
+    height: 306px;
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: space-between;
+    margin-left: 50px;
 }
 .top_right h3 {
-    font-size:2.369em;
+    font-size:2.369rem;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+.top_right .sub {
+    font-size: 1.333rem;
+    line-height: 40px;
+}
+.price p {
+    font-size: 1.333rem;
+}
+.price p:first-child {margin-bottom: 20px;}
+.price p em {
+    font-size: 2.369rem;
+    color:#FE6162;
+    font-family: jalnan;
+}
+.price p span {
+    font-size: 2.369rem;
+    font-family: jalnan;
+}
+.price {
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+}
+.price_left {
+    border-right:1px solid #000;
+    padding-right: 50px;
+}
+.price_right {
+    padding-left: 50px;
+}
+/* 아래티켓 */
+.btm_top {
+    width: 1200px; height: 380px;
+    background: url(../image/ticket.png) no-repeat center;
+    position: relative;
+    margin: 20px auto 0;
+}
+.btm_top h4 {
+    font-size: 1.777rem;
+    position: absolute;
+    top:20px; left: 320px;
+    color:#fff;
+}
+.btm_top h4 em {
+    font-size: 1.777rem;
     font-weight: 700;
 }
-main .free .recommendation .phuket .phuket_top .top_right  {}
-main .free .recommendation .phuket .phuket_top .top_right h3 {}
-main .free .recommendation .phuket .phuket_top .top_right .price {}
-main .free .recommendation .phuket .phuket_top .top_right .price p {}
-main .free .recommendation .phuket .phuket_top .top_right .price p em {}
-main .free .recommendation .phuket .phuket_top .top_right .price p span {}
-main .free .recommendation .phuket .phuket_btm {}
-main .free .recommendation .phuket .phuket_btm ul {}
-main .free .recommendation .phuket .phuket_btm ul li {}
-main .free .recommendation .phuket .phuket_btm ul li p {}
-main .free .recommendation .phuket .phuket_btm ul li p img {}
-main .free .recommendation .phuket a {}
-main .free .recommendation .japan {}
-main .free .recommendation .japan .japan_top {}
-main .free .recommendation .japan .japan_top .top_left {}
-main .free .recommendation .japan .japan_top .top_left p {}
-main .free .recommendation .japan .japan_top .top_left p img {}
-main .free .recommendation .japan .japan_top .top_right {}
-main .free .recommendation .japan .japan_top .top_right h3 {}
-main .free .recommendation .japan .japan_top .top_right .price {}
-main .free .recommendation .japan .japan_top .top_right .price p {}
-main .free .recommendation .japan .japan_top .top_right .price p em {}
-main .free .recommendation .japan .japan_top .top_right .price p span {}
-main .free .recommendation .japan .japan_btm {}
-main .free .recommendation .japan .japan_btm ul {}
-main .free .recommendation .japan .japan_btm ul li {}
-main .free .recommendation .japan .japan_btm ul li p {}
-main .free .recommendation .japan .japan_btm ul li p img {}
-main .free .recommendation .japan a {}
-main .free .recommendation .greece {}
-main .free .recommendation .greece .greece_top {}
-main .free .recommendation .greece .greece_top .top_left {}
-main .free .recommendation .greece .greece_top .top_left p {}
-main .free .recommendation .greece .greece_top .top_left p img {}
-main .free .recommendation .greece .greece_top .top_right {}
-main .free .recommendation .greece .greece_top .top_right h3 {}
-main .free .recommendation .greece .greece_top .top_right .price {}
-main .free .recommendation .greece .greece_top .top_right .price p {}
-main .free .recommendation .greece .greece_top .top_right .price p em {}
-main .free .recommendation .greece .greece_top .top_right .price p span {}
-main .free .recommendation .greece .greece_btm {}
-main .free .recommendation .greece .greece_btm ul {}
-main .free .recommendation .greece .greece_btm ul li {}
-main .free .recommendation .greece .greece_btm ul li p {}
-main .free .recommendation .greece .greece_btm ul li p img {}
-main .free .recommendation .greece a {}
+.btm_top .btm {position: relative;}
+.btm_top .btm ul {
+    position: absolute; left:95px; top:131px;
+}
+.btm_top .btm ul li {
+    width: 250px;
+    display: inline-block;
+    margin-right: 30px;
+}
+.btm_top .btm ul li:last-child {margin-right: 0;}
+.btm_top .btm ul li p {
+    font-size: 1.333rem;
+    line-height: 40px;
+}
+.btm_top .btm ul li p img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+.btm_top .go {
+    background-color: #FE6162;
+    padding: 20px 25px;
+    font-family: jalnan;
+    font-size: 1.333rem;
+    color:#fff;
+    border-radius: 10px;
+    position: absolute; bottom: 20px; right: 25px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btm_top .go:hover {
+    background-color: #eb2a2a; color: #FFF62C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.another {
+    background-color: #696054;
+    border-radius: 100px;
+    color:#fff;
+    padding: 10px 50px;
+    display: inline-block;
+    position: relative;
+    margin-top: 30px;
+}
+.another:hover {
+    background-color: #FE6162;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.50);
+}
+.another span {margin-right: 10px;}
+.another img {position: absolute; top:11px;}
+/* 묶음태그 끝 */
+main .free .recommendation .all_search {
+    display: inline-block;
+    background: rgb(255,140,34);
+    background: linear-gradient(90deg, rgba(255,140,34,1) 0%, rgba(254,97,98,1) 100%);
+    padding: 20px 50px;
+    border-radius: 100px;
+    margin-top: 100px;
+    position: relative;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
+}
+main .free .recommendation .all_search:hover {
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+}
+main .free .recommendation .all_search span {
+    font-size: 1.777rem;
+    font-weight: 700;
+    color:#fff;
+    margin-right: 10px;
+}
+main .free .recommendation .all_search img {
+    width: 17px;
+    position: absolute; top:24.17px;
+}
 /* 웰컴 */
-main .welcome {}
-main .welcome h2 {}
-main .welcome p {}
+main .welcome {
+    text-align: center;
+    padding-top:100px;
+    background:url(../image/sub_1.png) no-repeat, url(../image/sub_2.png) no-repeat;
+    background-size: 200px;
+    background-position:10% 40%, 90% 20%;
+}
+main .welcome h2 {
+    font-family: nanumpen;    
+    color: #FFF62C;
+    font-size: 7.5rem;
+    margin-bottom: 63px;
+    text-shadow: 5px 5px 6px rgba(0,0,0,0.15);
+}
+main .welcome p {
+    font-size: 1.333rem;
+    font-weight: 700;
+    color:#fff;
+    line-height: 45px;
+    margin-bottom: 100px;
+}
+main .welcome p:nth-child(4) {font-size: 1rem; font-weight: 400;}
 main .welcome .point {}
-main .welcome .point img {}
-main .welcome .point_go {}
+main .welcome .point img {
+    width: 1000px;
+    margin-bottom: 30px;
+}
+main .welcome .point_go {
+    display: inline-block;
+    padding: 20px 50px;
+    border: 5px solid #fff;
+    border-radius: 100px;
+    position: relative;
+    box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 100px;
+}
+main .welcome .point_go:hover {
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+}
+main .welcome .point_go span {
+    font-size: 1.777rem;
+    font-weight: 700;
+    color:#fff;
+    margin-right: 10px;
+}
+main .welcome .point_go img {
+    width: 17px;
+    position: absolute; top:24px;
+}
 /* 프로모션 */
-main .promotiom {}
-main .promotiom h2 {}
-main .promotiom p {}
-main .promotiom h2 .contents {}
-main .promotiom h2 .contents .content1 {}
-main .promotiom h2 .contents .content1 img {}
-main .promotiom h2 .contents .content1 h3 {}
-main .promotiom h2 .contents .content1 h3 p {}
-main .promotiom h2 .contents .content2 {}
-main .promotiom h2 .contents .content2 img {}
-main .promotiom h2 .contents .content2 h3 {}
-main .promotiom h2 .contents .content2 h3 p {}
-main .promotiom h2 .contents .content3 {}
-main .promotiom h2 .contents .content3 img {}
-main .promotiom h2 .contents .content3 h3 {}
-main .promotiom h2 .contents .content3 h3 p {}
-main .promotiom h2 .contents .content4 {}
-main .promotiom h2 .contents .content4 img {}
-main .promotiom h2 .contents .content4 h3 {}
-main .promotiom h2 .contents .content4 h3 p {}
-main .promotiom .more {}
+main .promotion {
+    background: url(../image/sub_3.png) no-repeat, url(../image/sub_1.png) no-repeat;
+    background-size: 200px,150px;
+    background-position: 10% 0%, 90% 20%;
+    padding:100px 0;
+    text-align: center;
+}
+main .promotion h2 {
+    font-family: jalnan;
+    color:#FFF62C;
+    font-size: 3.9375rem;
+    text-shadow: 5px 5px 6px rgba(0,0,0,0.15);
+    margin-bottom: 63px;
+}
+main .promotion > p {
+    font-size: 2.1875rem;
+    font-weight: 500;
+    line-height: 3.125rem;
+    color:#fff;
+    margin-bottom: 100px;
+}
+/* 묶음태그 */
+.contents h3 {
+    font-size: 1.777rem;
+    font-weight: 700;
+    margin:40px 0 20px;
+}
+/* 묶음태그 끝 */
+main .promotion .contents {
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    flex-flow:row wrap;
+}
+main .promotion .contents .content {
+    background-color: #fff;
+    width:calc(50% - 20px / 2);
+    height: 462px;
+    padding-top:40px;
+    border-top: 24px solid #00D1FF;
+}
+main .promotion .contents .content:nth-child(1) {margin:0 20px 20px 0;}
+main .promotion .contents .content:nth-child(3) {margin-right: 20px;}
+main .promotion .contents .content img {
+    width: 254px;
+}
+main .promotion .contents > p {
+    font-size: 1rem;
+    text-align: start;
+    color:#fff;
+    margin-top: 30px;
+}
+main .promotion .more {
+    display: inline-block;
+    padding: 20px 50px;
+    border: 5px solid #fff;
+    border-radius: 100px;
+    position: relative;
+    box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.25);
+    margin: 100px 0;
+}
+main .promotion .more:hover {
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+}
+main .promotion .more span {
+    font-size: 1.777rem;
+    font-weight: 700;
+    color:#fff;
+    margin-right: 10px;
+}
+main .promotion .more img {
+    width: 17px;
+    position: absolute; top:24px;
+}
 /* footer */
-footer {}
+footer {
+    background-color:#000;
+    text-align: center;
+    padding:60px 0;
+}
 footer .kakao {}
-footer .kakao img {}
+footer .kakao img {
+    width: 250px;
+}
 footer .kakao .kakao_btn {}
-footer .time {}
-footer .time p {}
-footer .site {}
+footer .kakao .kakao_btn p {
+    color:#fff;
+    width: 436px;
+    font-size: 2.369rem;
+    border: 3px solid #fff;
+    border-radius: 100px;
+    padding: 10px 0;
+    margin: 50px auto;
+    font-weight: 700;
+}
+footer .kakao .kakao_btn p:hover {
+    background-color: #fff;
+    color:#000
+}
+footer .time {
+    color:#fff;
+    padding: 30px 0;
+}
+footer .time p {
+    font-size: 1.777rem;
+}
+footer .time p:last-child {
+    font-size: 1.333rem;
+    margin-top: 40px;
+    line-height: 40px;
+}
+footer .site {
+    color:#00D1FF;
+    font-size: 1.333rem;
+    font-weight: 700;
+}
